@@ -50,13 +50,10 @@ A software-based emulation of a physical computer that runs an operating system 
 
 ## 7. In virtualization, what is the guest operating system?
 
-### a) The main operating system running on the physical machine
-
+a) The main operating system running on the physical machine
 > * ### b) The operating system installed on a virtual machine
-
-### c) The operating system running on a remote server
-
-### d) The operating system running on a mobile device
+c) The operating system running on a remote server
+d) The operating system running on a mobile device
 
 ## 8. What does virtual machine isolation mean?
 
