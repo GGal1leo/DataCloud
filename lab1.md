@@ -2,8 +2,7 @@
 
 ## 1. Check if your processor supports Intel/AMD virtualization technology. Enable Intel virtualization technology in BIOS if possible
 
-Done
-![](./assets/Screenshots/Screenshot_2025-05-10-15-02-14_22708.png)
+![Virt-X enabled](./assets/Screenshots/Screenshot_2025-05-10-15-02-14_22708.png)
 
 ## 2. The cloud is almost everywhere in our lives now. What do you think are the fundamental reasons behind its success? Name three pros and three cons of cloud
 
@@ -27,17 +26,33 @@ Done
 
 ## 3. What is the primary function of a hypervisor in virtualization?
 
+Manages and allocates physical resources (CPU, memory, storage) to virtual machines (VMs), enabling multiple OSes to run on a single physical host.
+
 ## 4. What is a virtual machine (VM)?
+
+A software-based emulation of a physical computer that runs an operating system and applications, isolated by a hypervisor.
 
 ## 5. What are the benefits of using virtual machines?
 
+1. Run multiple OSes on one physical machine.
+2. Isolation enhances security and testing.
+3. Efficient resource utilization.
+4. Simplified disaster recovery and backups.
+5. Cost savings on hardware.
+
 ## 6. List five use cases of virtual machines
+
+1. Server consolidation.
+2. Software development/testing environments.
+3. Running legacy applications.
+4. Cloud computing infrastructure.
+5. Sandboxing for security analysis
 
 ## 7. In virtualization, what is the guest operating system?
 
 ### a) The main operating system running on the physical machine
 
-### b) The operating system installed on a virtual machine
+> * ### b) The operating system installed on a virtual machine
 
 ### c) The operating system running on a remote server
 
