@@ -1,6 +1,6 @@
 # Lab 2: Running Containers  
-**Name:** [Daniel Vetrila]  
-**Date:** [10 May 2025]  
+**Name:** Daniel Vetrila  
+**Date:** 10 May 2025  
 
 ---
 
