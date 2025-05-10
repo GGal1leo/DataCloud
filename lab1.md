@@ -3,6 +3,7 @@
 ## 1. Check if your processor supports Intel/AMD virtualization technology. Enable Intel virtualization technology in BIOS if possible
 
 Done
+![](./assets/Screenshots/Screenshot_2025-05-10-15-02-14_22708.png)
 
 ## 2. The cloud is almost everywhere in our lives now. What do you think are the fundamental reasons behind its success? Name three pros and three cons of cloud
 
