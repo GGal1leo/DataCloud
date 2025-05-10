@@ -51,28 +51,25 @@ A software-based emulation of a physical computer that runs an operating system 
 ## 7. In virtualization, what is the guest operating system?
 
 a) The main operating system running on the physical machine  
-**b) The operating system installed on a virtual machine**  
+`b) The operating system installed on a virtual machine`  
 c) The operating system running on a remote server  
 d) The operating system running on a mobile device  
 
 ## 8. What does virtual machine isolation mean?
 
-### a) Virtual machines can communicate directly with the physical hardware
-
-### b) Virtual machines share the same resources and cannot be isolated
-
-### c) Virtual machines run independently and are isolated from each other and the host system
-
-### d) Virtual machines can only be accessed locally
+a) Virtual machines can communicate directly with the physical hardware  
+b) Virtual machines share the same resources and cannot be isolated  
+`c) Virtual machines run independently and are isolated from each other and the host system`  
+d) Virtual machines can only be accessed locally  
 
 ## 9. What is the benefit of virtual machine portability?
 
-### a) It allows virtual machines to communicate with each other easily
-
-### b) It ensures faster boot times for virtual machines
-
-### c) It allows virtual machines to be moved between different physical machines with compatible hypervisors
-
-### d) It reduces the need for hardware virtualization
+a) It allows virtual machines to communicate with each other easily  
+b) It ensures faster boot times for virtual machines  
+`c) It allows virtual machines to be moved between different physical machines with compatible hypervisors`  
+d) It reduces the need for hardware virtualization  
 
 ## 10. What is the purpose of cloning a virtual machine?
+
+To create an identical copy of a VM, enabling rapid deployment, testing, scaling, or backup replication.
+
