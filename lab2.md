@@ -30,3 +30,18 @@
 
 **Screenshot 1**: Hello World Verification
 ![Hello World](./assets/Screenshots/helloWorld)
+
+---
+
+## 2. Running Containers
+
+### Publishing Ports
+
+**Command:**  
+```bash
+docker run -d -p 8080:80 --name webserver nginx
+```
+- Access via http://localhost:8080.
+
+**Screenshot 2**: Nginx Welcome Page
+![Nginx](./assets/Screenshots/nginx)
