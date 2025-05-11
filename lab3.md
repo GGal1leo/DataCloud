@@ -153,3 +153,11 @@ curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME:8080/proxy/
 **Output:**
 
 ![Application Output](./assets/Screenshots/application)
+
+## Key Takeaways
+
+- **Deployment vs. Pod:** A Deployment manages Pods, not the Pods directly.
+- **Scaling:** Use kubectl scale deployment to increase replicas (covered in later labs).
+- **Services:** To expose the app externally, you’ll need a Service
+
+
