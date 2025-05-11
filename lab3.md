@@ -55,8 +55,59 @@ minikube start --driver=<driver-name>  # e.g., docker, virtualbox, hyperkit
 minikube start --driver=docker
 ```
 
-Output:
+****Output:****
 
 ![Minikube Start Output](./assets/Screenshots/minikubeStart)
 
+---
 
+## 4. Verify the Cluster
+
+**Check Cluster Status:**
+
+```bash
+minikube status
+```
+
+**Output:**
+
+![Minikube Status Output](./assets/Screenshots/minikubeStatus)
+
+**Check Nodes:**
+```bash
+kubectl get nodes
+``` 
+
+**Output:**
+
+![Minikube Nodes Output](./assets/Screenshots/minikubeNodes)
+
+---
+
+## 5. Cluster Components
+
+**Control Plane and Node:**
+
+- Minikube runs a single-node cluster where the control plane and worker node are combined.
+- Use kubectl to interact with the cluster.
+```bash
+kubectl cluster-info
+```
+
+**Output:**
+
+![Minikube Cluster Info Output](./assets/Screenshots/minikubeClusterInfo)
+
+---
+
+## 6. Stop and Delete the Cluster
+
+**Stop the Cluster:**
+```bash
+minikube stop
+```
+
+***Delete the Cluster:**
+```bash
+minikube delete
+```
