@@ -46,6 +46,7 @@ docker run -d -p 8080:80 --name webserver nginx
 **Screenshot 2**: Nginx Welcome Page
 ![Nginx](./assets/Screenshots/nginx)
 
+
 ### Overriding Container Defaults
 
 **Command:**  
@@ -81,6 +82,7 @@ services:
 
 **Screenshot 4:** Override the default CMD and ENTRYPOINT in Docker Compose
 ![Docker Compose](./assets/Screenshots/postgresLogin)
+
 
 ### Persisting Container Data
 
