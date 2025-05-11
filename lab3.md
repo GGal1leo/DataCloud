@@ -39,4 +39,24 @@ minikube version
 ```
 
 Screenshot of successful installation:
+
 ![Minikube Version](./assets/Screenshots/minikubeInstall)
+
+---
+
+## 3. Start the Cluster
+
+```bash
+minikube start --driver=<driver-name>  # e.g., docker, virtualbox, hyperkit
+```
+
+- Example:
+```bash
+minikube start --driver=docker
+```
+
+Output:
+
+![Minikube Start Output](./assets/Screenshots/minikubeStart)
+
+
