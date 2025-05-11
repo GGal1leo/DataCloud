@@ -13,4 +13,5 @@ Key Concepts:
 - Minikube: A tool to create a single-node Kubernetes cluster for local development.
 
 Cluster Diagram:
+
 ![Cluster Diagram](./assets/module_01_cluster.svg)
