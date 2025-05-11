@@ -46,6 +46,7 @@ docker run -d -p 8080:80 --name webserver nginx
 **Screenshot 2**: Nginx Welcome Page
 ![Nginx](./assets/Screenshots/nginx)
 
+---
 
 ### Overriding Container Defaults
 
@@ -83,6 +84,7 @@ services:
 **Screenshot 4:** Override the default CMD and ENTRYPOINT in Docker Compose
 ![Docker Compose](./assets/Screenshots/postgresLogin)
 
+---
 
 ### Persisting Container Data
 
@@ -99,3 +101,6 @@ docker run --name=new-db -d -v postgres_data:/var/lib/postgresql/data postgres
 **Screenshot 5:** Persisting data with Docker volumes
 ![Volume](./assets/Screenshots/volume)
 
+---
+
+### 
