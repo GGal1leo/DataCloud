@@ -45,3 +45,39 @@ docker run -d -p 8080:80 --name webserver nginx
 
 **Screenshot 2**: Nginx Welcome Page
 ![Nginx](./assets/Screenshots/nginx)
+
+### Overriding Container Defaults
+
+**Command:**  
+```bash
+docker run -d -e POSTGRES_PASSWORD=secret -p 5432:5432 postgres
+docker run -d -e POSTGRES_PASSWORD=secret -p 5433:5432 postgres
+```
+
+**Screenshot 3**: 2 Postgres Containers mapped to different ports running at the same time
+![Postgres](./assets/Screenshots/postgres)
+
+1. Create a compose.yml file with the following content:
+
+```yaml
+services:
+  postgres:
+    image: postgres
+    entrypoint: ["docker-entrypoint.sh", "postgres"]
+    command: ["-h", "localhost", "-p", "5432"]
+    environment:
+      POSTGRES_PASSWORD: secret 
+```
+
+2. Bring up the service by running the following command:
+```bash
+ docker compose up -d
+``` 
+
+3. Verify the authentication with Docker Desktop Dashboard.
+```bash
+ psql -U postgres
+```
+
+**Screenshot 4:** Override the default CMD and ENTRYPOINT in Docker Compose
+![Docker Compose](./assets/Screenshots/postgresLogin)
