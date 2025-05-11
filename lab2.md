@@ -103,4 +103,13 @@ docker run --name=new-db -d -v postgres_data:/var/lib/postgresql/data postgres
 
 ---
 
-### 
+### Sharing Local Files
+
+Start container using a bind mount:  
+```bash
+docker run -v /HOST/PATH:/CONTAINER/PATH:rw -it nginx #  rw for read/write permissions
+```
+
+**Screenshot 6:** Sharing local files with Docker
+![Bind Mount](./assets/Screenshots/bindMount)
+
