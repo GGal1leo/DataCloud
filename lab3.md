@@ -107,7 +107,47 @@ kubectl cluster-info
 minikube stop
 ```
 
-***Delete the Cluster:**
+**Delete the Cluster:**
 ```bash
 minikube delete
 ```
+
+## 7. Create Deploymet 
+
+```bash
+kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1
+```
+
+![Deployment Output](./assets/Screenshots/kubeCTLDEPLOYMENTS)
+
+## 8. Access the Application
+
+**Start the Proxy**
+```bash
+kubectl proxy
+``` 
+
+Explanation:  
+
+- This command starts a proxy server that allows you to access the Kubernetes API and services running in your cluster.
+
+! [Proxy Output](./assets/Screenshots/proxy)
+
+**Get the Pod Name**
+```bash
+export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
+echo "Pod Name: $POD_NAME"
+```
+
+**Output:**
+
+![Pod Name Output](./assets/Screenshots/podName)
+
+**Access the Application:**
+
+Use `curl` to interact with the Pod:
+```bash
+curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME:8080/proxy/
+```
+
+
