@@ -150,4 +150,6 @@ Use `curl` to interact with the Pod:
 curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME:8080/proxy/
 ```
 
+**Output:**
 
+![Application Output](./assets/Screenshots/application)
