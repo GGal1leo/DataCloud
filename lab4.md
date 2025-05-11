@@ -40,4 +40,38 @@ kubectl exec "$(kubectl get pod -l app=ratings -o jsonpath='{.items[0].metadata.
 
 ![Install Succesful](./assets/Screenshots/bookinfo)
 
+---
+
+# Open the application to outside traffic
+
+1. Create a Kubernetes Gateway for the Bookinfo application:
+```bash
+kubectl apply -f samples/bookinfo/gateway-api/bookinfo-gateway.yaml
+``` 
+2. Change the service type to ClusterIP by annotating the gateway:
+```bash
+kubectl annotate gateway bookinfo-gateway networking.istio.io/service-type=ClusterIP --namespace=default
+```
+3. To check the status of the gateway, run:
+```bash
+kubectl get gateway
+```
+
+**Access the application:**
+
+![Bookinfo Application](./assets/Screenshots/portforward)
+
+---
+
+# View the dashboard
+
+1. Install Kiali and the other addons and wait for them to be deployed.
+```bash
+kubectl apply -f samples/addons
+kubectl rollout status deployment/kiali -n istio-system
+```
+2. Access the Kiali dashboard:
+```bash
+istioctl dashboard kiali
+```
 
