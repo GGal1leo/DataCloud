@@ -113,3 +113,36 @@ docker run -v /HOST/PATH:/CONTAINER/PATH:rw -it nginx #  rw for read/write permi
 **Screenshot 6:** Sharing local files with Docker
 ![Bind Mount](./assets/Screenshots/bindMount)
 
+---
+
+### Multi-Container Applications
+
+Setting Up the sample application repo:  
+![Sample Application](./assets/Screenshots/sampleApp)
+
+Create a network: 
+```bash
+docker network create sample-app
+```
+
+Start the redis container:  
+```bash
+docker run -d  --name redis --network sample-app --network-alias redis redis
+```
+
+Start the web containers:
+```bash
+docker run -d --name web1 -h web1 --network sample-app --network-alias web1 web
+docker run -d --name web2 -h web2 --network sample-app --network-alias web2 web
+```
+
+Start the Nginx container:
+```bash
+ docker run -d --name nginx --network sample-app  -p 80:80 nginx
+``` 
+
+Screenshot 7: Multi-Container Application
+![Multi-Container](./assets/Screenshots/runContainers)
+![Localhost](./assets/Screenshots/localhost)
+
+
