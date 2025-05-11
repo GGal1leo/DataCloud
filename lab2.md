@@ -81,3 +81,19 @@ services:
 
 **Screenshot 4:** Override the default CMD and ENTRYPOINT in Docker Compose
 ![Docker Compose](./assets/Screenshots/postgresLogin)
+
+### Persisting Container Data
+
+**Command to create a volume:**  
+```bash
+docker run --name=db -e POSTGRES_PASSWORD=secret -d -v postgres_data:/var/lib/postgresql/data postgres
+```
+
+**Command to use the volume:**  
+```bash
+docker run --name=new-db -d -v postgres_data:/var/lib/postgresql/data postgres
+```
+
+**Screenshot 5:** Persisting data with Docker volumes
+![Volume](./assets/Screenshots/volume)
+
