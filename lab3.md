@@ -39,4 +39,4 @@ minikube version
 ```
 
 Screenshot of successful installation:
-![Minikube Version](./assets/minikubeInstall)
+![Minikube Version](./assets/Screenshots/minikubeInstall)
